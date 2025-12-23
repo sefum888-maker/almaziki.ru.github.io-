@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almaziki.ru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-gem"></i>
+                    <span>Almaziki.ru</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Уникальные драгоценные камни</h1>
+                    <p>Коллекция редких и прекрасных драгоценных камней со всего мира</p>
+                    <a href="catalog.html" class="btn-primary">Смотреть каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории камней -->
+        <section class="categories">
+            <div class="container">
+                <h2>Категории камней</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ ДРАГОЦЕННЫХ КАМНЕЙ ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_5_2025-12-23_13-09-14.jpg" alt="Драгоценные камни">
+                        </div>
+                        <h3>Драгоценные</h3>
+                        <p>Алмазы, рубины, сапфиры, изумруды</p>
+                        <a href="catalog.html?category=precious" class="btn-secondary">Смотреть</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ ПОЛУДРАГОЦЕННЫХ КАМНЕЙ ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_5_2025-12-23_13-09-14.jpg" alt="Полудрагоценные камни">
+                        </div>
+                        <h3>Полудрагоценные</h3>
+                        <p>Аметисты, топазы, гранаты, аквамарины</p>
+                        <a href="catalog.html?category=semi-precious" class="btn-secondary">Смотреть</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ ОГРАНЕННЫХ КАМНЕЙ ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_4_2025-12-23_13-09-14.jpg" alt="Ограненные камни">
+                        </div>
+                        <h3>Ограненные</h3>
+                        <p>Камни с профессиональной огранкой</p>
+                        <a href="catalog.html?category=faceted" class="btn-secondary">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные камни -->
+        <section class="featured">
+            <div class="container">
+                <h2>Популярные камни</h2>
+                <div class="gems-grid">
+                    <!-- Карточка камня 1 -->
+                    <div class="gem-card">
+                        <div class="gem-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ АЛМАЗА ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_1_2025-12-23_13-09-14.jpg" alt="Алмаз">
+                        </div>
+                        <div class="gem-info">
+                            <h3>Алмаз</h3>
+                            <p class="gem-description">Бриллиант высшего качества, огранка "Принцесса"</p>
+                            <div class="gem-price">$2,500</div>
+                            <button class="btn-add-to-cart" data-id="1" data-name="Алмаз" data-price="2500">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка камня 2 -->
+                    <div class="gem-card">
+                        <div class="gem-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ РУБИНА ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_2_2025-12-23_13-09-14.jpg" alt="Рубин">
+                        </div>
+                        <div class="gem-info">
+                            <h3>Рубин</h3>
+                            <p class="gem-description">Натуральный рубин из Мьянмы, огранка "Овал"</p>
+                            <div class="gem-price">$1,800</div>
+                            <button class="btn-add-to-cart" data-id="2" data-name="Рубин" data-price="1800">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка камня 3 -->
+                    <div class="gem-card">
+                        <div class="gem-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ САПФИРА ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_2025-12-23_13-20-04.jpg" alt="Сапфир">
+                        </div>
+                        <div class="gem-info">
+                            <h3>Сапфир</h3>
+                            <p class="gem-description">Синий сапфир из Шри-Ланки, огранка "Кушон"</p>
+                            <div class="gem-price">$1,200</div>
+                            <button class="btn-add-to-cart" data-id="3" data-name="Сапфир" data-price="1200">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка камня 4 -->
+                    <div class="gem-card">
+                        <div class="gem-img">
+                            <!-- ВСТАВЬТЕ КАРТИНКУ ИЗУМРУДА ЗДЕСЬ -->
+                            <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\photo_2025-12-23_13-20-22.jpg" alt="Изумруд">
+                        </div>
+                        <div class="gem-info">
+                            <h3>Изумруд</h3>
+                            <p class="gem-description">Колумбийский изумруд, огранка "Изумруд"</p>
+                            <div class="gem-price">$2,000</div>
+                            <button class="btn-add-to-cart" data-id="4" data-name="Изумруд" data-price="2000">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>О нашей компании</h2>
+                        <p>Мы специализируемся на продаже драгоценных и полудрагоценных камней с 1900 года. Наши камни добываются в экологически чистых регионах и проходят тщательный отбор.(нет)</p>
+                        <p>Мы гарантируем подлинность всех камней и предоставляем сертификаты качества.(нет)</p>
+                        <a href="about.html" class="btn-primary">Узнать больше</a>
+                    </div>
+                    <div class="about-img">
+                        <!-- ВСТАВЬТЕ КАРТИНКУ О КОМПАНИИ ЗДЕСЬ -->
+                        <img src="C:\Users\Admin\Desktop\IThub\HTML_CSS\tasks\kt_last\original_5559d38840c0882b298c741b_5f44e3a624dea.avif" alt="Магазин камней">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Корзина (модальное окно) -->
+        <div class="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h3>Ваша корзина</h3>
+                    <span class="close-cart">&times;</span>
+                </div>
+                <div class="cart-items">
+                    <!-- Товары будут добавляться сюда динамически -->
+                </div>
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span class="total-price">$0</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-secondary" id="clear-cart">Очистить корзину</button>
+                    <button class="btn-primary" id="checkout">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Gems Collection</h4>
+                    <p>Продажа драгоценных и полудрагоценных камней с 1900 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ростов ул. Текучева 139А</p>
+                    <p><i class="fas fa-phone"></i> +7 (961) 277-68-67</p>
+                    <p><i class="fas fa-envelope"></i> almaziki@mail.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gems Collection. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Страницы для перехода (скрыты по умолчанию) -->
+    <div id="catalog-page" class="page" style="display: none;">
+        <div class="container">
+            <h2>Каталог камней</h2>
+            <p>Здесь будет полный каталог всех доступных камней.</p>
+            <a href="index.html" class="btn-primary">Вернуться на главную</a>
+        </div>
+    </div>
+
+    <div id="about-page" class="page" style="display: none;">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Подробная информация о нашей компании и нашей миссии.</p>
+            <a href="index.html" class="btn-primary">Вернуться на главную</a>
+        </div>
+    </div>
+
+    <div id="contact-page" class="page" style="display: none;">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для получения дополнительной информации.</p>
+            <a href="index.html" class="btn-primary">Вернуться на главную</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
